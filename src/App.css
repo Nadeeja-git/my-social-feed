@@ -1,0 +1,222 @@
+
+
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+.feed-container {
+  width: 600px;
+}
+
+.feed-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+.user-name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.post-time {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.caption {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.like-btn,
+.comment-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.like-btn:hover,
+.comment-btn:hover {
+  background: #0056b3;
+}
+
+.comment-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-section input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.send-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #1e7e34;
+}
+
+.comment-list {
+  margin-top: 10px;
+}
+
+.comment-text {
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+/* For tablets (max width 900px) */
+
+@media (max-width: 900px) {
+  .feed-container {
+    width: 90%;
+  }
+
+  .post-card {
+    padding: 12px;
+  }
+
+  .caption {
+    font-size: 14px;
+  }
+
+  .like-btn,
+  .comment-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .profile-pic {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* For mobile phones (max width 600px)*/
+
+@media (max-width: 600px) {
+  .app {
+    padding: 15px;
+  }
+
+  .feed-container {
+    width: 100%;
+  }
+
+  .feed-title {
+    font-size: 20px;
+  }
+
+  .post-card {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .post-header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .user-name {
+    font-size: 15px;
+  }
+
+  .post-time {
+    font-size: 11px;
+  }
+
+  .caption {
+    font-size: 14px;
+  }
+
+  .post-image {
+    border-radius: 6px;
+  }
+
+  .like-btn,
+  .comment-btn,
+  .send-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .comment-section input {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .comment-text {
+    font-size: 13px;
+  }
+}
+
